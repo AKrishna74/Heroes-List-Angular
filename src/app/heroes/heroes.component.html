@@ -1,0 +1,11 @@
+<h2 class="heroName">{{hero.name}}</h2>
+<h2 class="heroage">{{hero.age}}</h2>
+<input placeholder="Hero Name" [(ngModel)]="hero.name">
+<ul>
+
+    <li class="listalignment" *ngFor="let herodata of heroes">
+        <span class="listname">{{herodata.name}} </span>
+        <span class="listage">{{herodata.age}}</span>
+    </li>
+
+</ul>

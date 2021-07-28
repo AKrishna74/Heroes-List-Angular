@@ -1,0 +1,32 @@
+.heroName
+{
+    color: aqua;
+}
+.heroage
+{
+    color: rgb(255, 230, 0);
+}
+.listalignment{
+    width:15% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    
+
+}
+.listname{
+    padding: 10px;
+    width: 80%;
+    background-color:#cccccc;
+    border-bottom-left-radius: 25px;
+}
+.listage{
+    padding: 10px;
+  
+
+
+    width: 20%;
+background-color: rgb(63, 59, 59);
+color: white;
+}
