@@ -1,11 +1,12 @@
-<h2 class="heroName">{{hero.name}}</h2>
-<h2 class="heroage">{{hero.age}}</h2>
-<input placeholder="Hero Name" [(ngModel)]="hero.name">
+
 <ul>
 
-    <li class="listalignment" *ngFor="let herodata of heroes">
+    <li class="listalignment" *ngFor="let herodata of heroes" (click)="onSelect(herodata)" [class.selectedData]="herodata==selected_hero">
         <span class="listname">{{herodata.name}} </span>
         <span class="listage">{{herodata.age}}</span>
     </li>
 
 </ul>
+<app-hero-detail [hero_details]="selected_hero">
+
+</app-hero-detail>
